@@ -4,7 +4,7 @@ A basic web app with https.
 
 # Install
 
-Put a fresh unbuntu image on a RPI. ssh in and run the following script.
+Put a fresh ubuntu image on a RPI. ssh in and run the following script.
 
 ```bash
 
