@@ -24,12 +24,7 @@ RUN ln -s /etc/nginx/sites-available/happy_cake.conf /etc/nginx/sites-enabled/ &
 WORKDIR /happy_cake
 RUN python3 -m pip install -r requirements.txt
 
-# Make the start script executable
-RUN chmod +x ./start.sh
-
 # Expose ports
 EXPOSE 80 443 5000
 
-# RUN service nginx start
-
-CMD ["bash", "./start.sh"]
+CMD ["sh", "start.sh"]

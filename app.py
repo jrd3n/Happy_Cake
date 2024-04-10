@@ -10,8 +10,11 @@ login_manager.login_view = 'login'
 app.config['SECRET_KEY'] = 'mysecret'  # In production, use a secure and unique secret key
 
 # This is a dummy user store for the sake of demonstration. In real life, you'd use a database.
-users = {'username': 
-                    {'password': 'password123',
+users = {'gooduser': 
+                    {'password': 'BSI120Kitemark',
+                    'next_login_attempt' : None} ,
+        'baduser': 
+                    {'password': 'cookie',
                     'next_login_attempt' : None}}  # This is for a user named 'username' with a password 'password123'
 
 LOGIN_DELAY = datetime.timedelta(seconds=6)  # 6 seconds delay between login attempts
@@ -99,4 +102,4 @@ def pw_reset():
     return render_template('password_reset.html', message= "")
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=True, port=5000)
+    app.run(debug=True, port=5000)
