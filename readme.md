@@ -57,3 +57,5 @@ chmod +x start.sh
 # End of script
 
 ```
+
+remember to add happycakefactory.bsi to /etc/hosts
