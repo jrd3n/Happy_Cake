@@ -52,10 +52,8 @@ sudo rm -rf /var/lib/apt/lists/*
 chmod +x start.sh
 
 # Add your script to the crontab to run at reboot
-(crontab -l 2>/dev/null; echo "@reboot ~/Happy_Cake-main/script.sh") | crontab -
+(crontab -l 2>/dev/null; echo "@reboot sleep 60 && python3 ~/happy_cake_factory/Happy_Cake-main/app.py >> ~/log") | crontab -
 
 # End of script
 
-```
-
-remember to add happycakefactory.bsi to /etc/hosts
+``` 
