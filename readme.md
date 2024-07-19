@@ -55,5 +55,6 @@ chmod +x start.sh
 (crontab -l 2>/dev/null; echo "@reboot sleep 60 && python3 ~/happy_cake_factory/Happy_Cake-main/app.py >> ~/log") | crontab -
 
 # End of script
+sudo reboot -n
 
 ``` 
