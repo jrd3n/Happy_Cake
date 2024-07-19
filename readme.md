@@ -26,7 +26,7 @@ unzip main.zip
 cd Happy_Cake-main  # Adjust this if the directory structure is different
 
 # Install Python dependencies
-sudo python3 -m pip install -r requirements.txt
+sudo python3 -m pip install -r requirements.txt --break-system-packages
 
 # Setup SSL certificates
 sudo mkdir -p /etc/ssl/nginx
